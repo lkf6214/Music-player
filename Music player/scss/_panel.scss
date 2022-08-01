@@ -1,0 +1,39 @@
+section {
+  width: 20vw;
+  height: 65vh;
+  //   vh가 압도적으로 큼
+  position: absolute;
+  left: 50%;
+  top: 150%;
+  margin-left: -10vw;
+  margin-top: -32.5vh;
+  //   마진 값으로 중앙정렬할거임
+  transition: 1s;
+
+  article {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    .inner {
+      width: 100%;
+      height: 100%;
+      background-color: aliceblue;
+      padding: 5vh 2.5vw 8vh;
+      border-radius: 10px;
+      box-shadow: 10px 10px 20px rgb(0, 0, 0, 0.1);
+      opacity: 0.6;
+      transform: scale(0.8);
+      transition: 1s;
+    }
+
+    &.on {
+      .inner {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  }
+}
